@@ -45,10 +45,6 @@
      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
  }
 
- .navbar-item:hover {
-     color: #037f7c !important;
- }
-
  .button-personalizado {
      border-radius: 45px;
      border: none;
@@ -74,11 +70,15 @@
 
  .titulo-personalizado {
      font-size: 80px;
+     font-weight: 400px;
      color: #003D37;
+ }
+
+ #borda {
+     border-bottom: 3px solid #003D37;
+     padding-bottom: 5rem;
  }
 
  .texto-personalizado {
      color: #002A26;
-     border-bottom: 3px solid #003D37;
-     padding-bottom: 5rem;
  }
