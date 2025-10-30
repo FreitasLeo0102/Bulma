@@ -1,0 +1,84 @@
+ body {
+     background-image: url(IMG/background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: 0;
+     height: 100%;
+ }
+
+ #logo-bulma {
+     width: 370px;
+     height: 507px;
+
+ }
+
+ .container {
+     padding-top: 1.5rem;
+ }
+
+ .navbar {
+     background-image: url(IMG/background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 50px;
+     box-shadow:
+         0 0 30px rgba(0, 0, 0, 0.2),
+         0 0 30px rgba(0, 0, 0, 0.15),
+         0 0 30px rgba(0, 0, 0, 0.1);
+     padding: 0.5rem 2rem;
+     max-width: 900px;
+     margin: 0 auto;
+ }
+
+ .navbar-item img {
+     max-height: 50px;
+ }
+
+ .navbar-menu {
+     justify-content: space-around;
+     flex-grow: 1;
+ }
+
+ .navbar-item {
+     font-weight: 600;
+     color: #094e51 !important;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+ }
+
+ .navbar-item:hover {
+     color: #037f7c !important;
+ }
+
+ .button-personalizado {
+     border-radius: 45px;
+     border: none;
+     background-color: #FFFFFF4D;
+     color: #000;
+     box-shadow:
+         0 0 15px rgba(0, 0, 0, 0.2),
+         0 0 15px rgba(0, 0, 0, 0.15),
+         0 0 15px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .button-personalizado:hover {
+     background-color: #ffffff9d;
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+ }
+
+ .image-custom img {
+     max-width: 300px;
+     display: block;
+     margin: auto;
+ }
+
+ .titulo-personalizado {
+     font-size: 80px;
+     color: #003D37;
+ }
+
+ .texto-personalizado {
+     color: #002A26;
+     border-bottom: 3px solid #003D37;
+     padding-bottom: 5rem;
+ }
