@@ -41,7 +41,7 @@
 
  .navbar-item {
      font-weight: 600;
-     color: #094e51 !important;
+     color: #094e51;
      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
  }
 
@@ -81,4 +81,203 @@
 
  .texto-personalizado {
      color: #002A26;
+        font-size: 1.2rem;
+        font-size: 30px;
+        font-weight: 400px;
  }
+ 
+#recursos {
+  padding: 3rem 1.5rem;
+  border-radius: 12px;
+}
+
+#recursos .title {
+  font-size: 60px;
+  font-weight: 400px;
+  color: #003D37;
+}
+
+#recursos .card {
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+#recursos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+#recursos .card-image img {
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+#recursos .card-content {
+  background-color: #006f68;
+  padding: 1.25rem 1rem;
+  border-radius: 0 0 12px 12px;
+}
+
+#recursos .card-content .title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#recursos .card-content p {
+  font-size: 1rem;
+  color: #dffaf8;
+  line-height: 1.5;
+}
+
+#pinkwave {
+  padding: 4rem 1.5rem;
+  border-radius: 12px;
+  color: #033c4f;
+}
+
+#pinkwave .title {
+  font-size: 60px;
+  font-weight: 400px;
+  color: #003D37;
+}
+
+#pinkwave p {
+  color: #033c4f;
+  line-height: 1.6;
+}
+
+.pinkwave-card {
+  background-color: #b2f4ec;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 2rem 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pinkwave-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#pinkwave .notification {
+  background-color: #00786e !important;
+  color: #fff !important;
+  border-radius: 16px;
+}
+
+#pinkwave .button.is-dark {
+  background-color: #004d47;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+}
+
+#pinkwave .button.is-dark:hover {
+  background-color: #002f2b;
+}
+
+pink {
+    font-size: 24px;
+    align-content: center;
+    display: block;
+}
+
+/* Fundo geral e estilo da seção de comentários */
+#comentarios {
+  background: linear-gradient(180deg, #a2e7e0 0%, #b7f0e8 100%);
+  padding: 4rem 1.5rem;
+  border-radius: 12px;
+}
+
+/* Título */
+#comentarios .title {
+  color: #033c4f;
+  font-weight: 700;
+}
+
+/* Cards de comentários */
+.comentario-card {
+  background: linear-gradient(to bottom, #007a72 50%, #aef6f0 50%);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comentario-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Imagens redondas */
+.comentario-card img {
+  border: 5px solid #007a72;
+}
+
+/* Texto dos comentários */
+.comentario-card p {
+  color: #033c4f;
+  font-size: 1.1rem;
+}
+
+/* Rodapé */
+#rodape {
+  background-color: #A4F4EE;
+  padding: 2rem 1.5rem;
+}
+
+#rodape p {
+  color: #033c4f;
+  font-size: 0.9rem;
+}
+
+#rodape .image {
+  margin-right: 1rem;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Caixa com botão lateral */
+.rodape-box {
+  background-color: #00A99A;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rodape-box p {
+  color: white ;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.rodape-box .button {
+  background-color: #009688;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.rodape-box .button:hover {
+  background-color: #007a6c;
+}
