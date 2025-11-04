@@ -1,283 +1,317 @@
  body {
-     background-image: url(IMG/background.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin: 0;
-     height: 100%;
+   background-image: url(IMG/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+   height: 100%;
+   scroll-behavior: smooth;
  }
 
  #logo-bulma {
-     width: 370px;
-     height: 507px;
+   width: 370px;
+   height: 507px;
 
  }
 
  .container {
-     padding-top: 1.5rem;
+   padding-top: 1.5rem;
  }
 
  .navbar {
-     background-image: url(IMG/background.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     border-radius: 50px;
-     box-shadow:
-         0 0 30px rgba(0, 0, 0, 0.2),
-         0 0 30px rgba(0, 0, 0, 0.15),
-         0 0 30px rgba(0, 0, 0, 0.1);
-     padding: 0.5rem 2rem;
-     max-width: 900px;
-     margin: 0 auto;
+   background-image: url(IMG/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 50px;
+   box-shadow:
+     0 0 30px rgba(0, 0, 0, 0.2),
+     0 0 30px rgba(0, 0, 0, 0.15),
+     0 0 30px rgba(0, 0, 0, 0.1);
+   padding: 0.5rem 2rem;
+   max-width: 900px;
+   margin: 0 auto;
  }
 
  .navbar-item img {
-     max-height: 50px;
+   max-height: 50px;
  }
 
  .navbar-menu {
-     justify-content: space-around;
-     flex-grow: 1;
+   justify-content: space-around;
+   flex-grow: 1;
  }
 
+ .navbar-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #002A26; /* mesma cor da tua borda */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+
  .navbar-item {
-     font-weight: 600;
-     color: #094e51;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+   font-weight: 600;
+   color: #094e51;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+   position: relative;
+   transition: background-color 0.3s ease, border-bottom;
+ }
+
+ .navbar-item:hover {
+  background-color: rgb(0, 0, 0, 0);
  }
 
  .button-personalizado {
-     border-radius: 45px;
-     border: none;
-     background-color: #FFFFFF4D;
-     color: #000;
-     box-shadow:
-         0 0 15px rgba(0, 0, 0, 0.2),
-         0 0 15px rgba(0, 0, 0, 0.15),
-         0 0 15px rgba(0, 0, 0, 0.1);
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border-radius: 45px;
+   border: none;
+   background-color: #FFFFFF4D;
+   color: #000;
+   box-shadow:
+     0 0 15px rgba(0, 0, 0, 0.2),
+     0 0 15px rgba(0, 0, 0, 0.15),
+     0 0 15px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
  }
 
  .button-personalizado:hover {
-     background-color: #ffffff9d;
-     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+   background-color: #ffffff9d;
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
  }
 
  .image-custom img {
-     max-width: 300px;
-     display: block;
-     margin: auto;
+   max-width: 300px;
+   display: block;
+   margin: auto;
  }
 
  .titulo-personalizado {
-     font-size: 80px;
-     font-weight: 400px;
-     color: #003D37;
+   font-size: 80px;
+   font-weight: 400px;
+   color: #003D37;
  }
 
  #borda {
-     border-bottom: 3px solid #003D37;
-     padding-bottom: 5rem;
+   border-bottom: 3px solid #003D37;
+   padding-bottom: 5rem;
  }
 
  .texto-personalizado {
-     color: #002A26;
-        font-size: 1.2rem;
-        font-size: 30px;
-        font-weight: 400px;
+   color: #002A26;
+   font-size: 1.2rem;
+   font-size: 30px;
+   font-weight: 400px;
  }
- 
-#recursos {
-  padding: 3rem 1.5rem;
-  border-radius: 12px;
+
+ #recursos {
+   padding: 3rem 1.5rem;
+   border-radius: 12px;
+ }
+
+ #recursos .title {
+   font-size: 60px;
+   font-weight: 400px;
+   color: #003D37;
+ }
+
+ #recursos .card {
+   border-radius: 16px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+   color: #fff;
+   transition: transform 0.25s ease, box-shadow 0.25s ease;
+   overflow: hidden;
+ }
+
+ #recursos .card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+ }
+
+ #recursos .card-image img {
+   border-radius: 12px 12px 0 0;
+   object-fit: cover;
+ }
+
+ #recursos .card-content {
+   background-color: #006f68;
+   padding: 1.25rem 1rem;
+   border-radius: 0 0 12px 12px;
+ }
+
+ #recursos .card-content .title {
+   color: #fff;
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+ }
+
+ #recursos .card-content p {
+   font-size: 1rem;
+   color: #dffaf8;
+   line-height: 1.5;
+ }
+
+
+ .custom-card {
+   background-color: #0da59d;
+   border-radius: 15px;
+   padding: 1.5rem;
+   text-align: center;
+   color: white;
+   width: 260px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+   margin: 40px auto;
+ }
+
+ .custom-button {
+   background-color: #b9edea;
+   color: black;
+   border-radius: 20px;
+   padding: 0.5rem 1.5rem;
+   font-weight: 500;
+   border: none;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+   transition: transform 0.2s;
+ }
+
+ .custom-button:hover {
+   transform: scale(1.05);
+ }
+
+ #pinkwave .columns {
+   align-items: flex-start;
+   padding: 3rem;
+ }
+
+ #fixo {
+   position: sticky;
+   top: 100px;
+   text-align: center;
+   align-self: flex-start;
+ }
+
+ #comentarios {
+   background: linear-gradient(180deg, #a2e7e0 0%, #b7f0e8 100%);
+   padding: 4rem 1.5rem;
+   border-radius: 12px;
+ }
+
+ #comentarios .title {
+   color: #033c4f;
+   font-weight: 700;
+ }
+
+ .comment-card {
+   width: 280px;
+   height: 330px;
+   background-color: #8ff3f1;
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+   margin: 0 auto;
+   transition: transform 0.3s;
+ }
+
+ .comment-card:hover {
+   transform: translateY(-5px);
+ }
+
+ .card-top {
+   background-color: #0da59d;
+   height: 25%;
+   position: relative;
+ }
+
+ .user-img {
+   position: absolute;
+   top: 25%;
+   left: 59%;
+   transform: translate(-75%, -50%);
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 6px solid #0da59d;
+   object-fit: cover;
+   background-color: white;
+ }
+
+
+ .card-content {
+  padding-top: 80px;
+  text-align: center;
+  color: #003a38;
 }
 
-#recursos .title {
-  font-size: 60px;
-  font-weight: 400px;
-  color: #003D37;
-}
 
-#recursos .card {
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  overflow: hidden;
-}
+ .card-content p {
+   font-size: 1.1rem;
+   padding: 0 1rem;
+ }
 
-#recursos .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-}
+ strong {
+  color: #003a38;
+ }
 
-#recursos .card-image img {
-  border-radius: 12px 12px 0 0;
-  object-fit: cover;
-}
+ #rodape {
+   background-color: #A4F4EE;
+   padding: 2rem 1.5rem;
+ }
 
-#recursos .card-content {
-  background-color: #006f68;
-  padding: 1.25rem 1rem;
-  border-radius: 0 0 12px 12px;
-}
+ #rodape p {
+   color: #033c4f;
+   font-size: 0.9rem;
+ }
 
-#recursos .card-content .title {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
+ #rodape .image {
+   margin-right: 1rem;
+ }
 
-#recursos .card-content p {
-  font-size: 1rem;
-  color: #dffaf8;
-  line-height: 1.5;
-}
+ .social-icons {
+   display: flex;
+   gap: 1rem;
+   margin-top: 0.5rem;
+ }
 
-#pinkwave {
-  padding: 4rem 1.5rem;
-  border-radius: 12px;
-  color: #033c4f;
-}
+ .social-icons img {
+   width: 24px;
+   height: 24px;
+ }
 
-#pinkwave .title {
-  font-size: 60px;
-  font-weight: 400px;
-  color: #003D37;
-}
+ .rodape-box {
+   background-color: #00A99A;
+   border-radius: 12px;
+   max-width: 350px;
+   padding: 1rem 2rem;
+   margin-left: auto;
+ }
 
-#pinkwave p {
-  color: #033c4f;
-  line-height: 1.6;
-}
-
-.pinkwave-card {
-  background-color: #b2f4ec;
-  border-radius: 20px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-  padding: 2rem 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.pinkwave-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-#pinkwave .notification {
-  background-color: #00786e !important;
-  color: #fff !important;
-  border-radius: 16px;
-}
-
-#pinkwave .button.is-dark {
-  background-color: #004d47;
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-}
-
-#pinkwave .button.is-dark:hover {
-  background-color: #002f2b;
-}
-
-pink {
-    font-size: 24px;
-    align-content: center;
-    display: block;
-}
-
-/* Fundo geral e estilo da seção de comentários */
-#comentarios {
-  background: linear-gradient(180deg, #a2e7e0 0%, #b7f0e8 100%);
-  padding: 4rem 1.5rem;
-  border-radius: 12px;
-}
-
-/* Título */
-#comentarios .title {
-  color: #033c4f;
-  font-weight: 700;
-}
-
-/* Cards de comentários */
-.comentario-card {
-  background: linear-gradient(to bottom, #007a72 50%, #aef6f0 50%);
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.comentario-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
-}
-
-/* Imagens redondas */
-.comentario-card img {
-  border: 5px solid #007a72;
-}
-
-/* Texto dos comentários */
-.comentario-card p {
-  color: #033c4f;
-  font-size: 1.1rem;
-}
-
-/* Rodapé */
-#rodape {
-  background-color: #A4F4EE;
-  padding: 2rem 1.5rem;
-}
-
-#rodape p {
-  color: #033c4f;
-  font-size: 0.9rem;
-}
-
-#rodape .image {
-  margin-right: 1rem;
-}
-
-/* Ícones sociais */
-.social-icons {
+ .rodape-content {
   display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Caixa com botão lateral */
-.rodape-box {
-  background-color: #00A99A;
-  border-radius: 12px;
-  padding: 1rem 2rem;
-  margin-left: auto;
-  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: center;
+ }
 
-.rodape-box p {
-  color: white ;
-  margin: 0;
-  font-size: 1rem;
-}
+ .rodape-box p {
+   color: white;
+   margin: 0;
+   font-size: 1rem;
+ }
 
-.rodape-box .button {
-  background-color: #009688;
-  color: white;
-  border: none;
-  margin-left: 1rem;
-  transition: background-color 0.3s ease;
-}
+ .rodape-box .button {
+   background-color: #009688;
+   color: white;
+   border: none;
+   margin-left: 1rem;
+   transition: background-color 0.3s ease;
+ }
 
-.rodape-box .button:hover {
-  background-color: #007a6c;
-}
+ .rodape-box .button:hover {
+   background-color: #007a6c;
+ }
