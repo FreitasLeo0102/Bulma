@@ -108,3 +108,14 @@ footer {
   color: white;
   padding: 2rem 1.5rem;
 }
+.esferaaa {
+  width: 10px;
+}
+.esferaa {
+  width: 6px;
+}
+.button.is-green{
+  background-color:#5f08a7;
+  align-self: center;
+  display: flex;
+}
